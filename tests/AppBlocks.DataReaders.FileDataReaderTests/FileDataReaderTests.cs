@@ -8,7 +8,7 @@ namespace AppBlocks.DataReaders.FileDataReaderTests
         [TestMethod]
         public void TestMethod1()
         {
-            var path = ".\\data\\ItemChildrenDeserializationTest.json";
+            var path = "..\\..\\..\\data\\ItemChildrenDeserializationTest.json";
             var reader = new FileDataReader(path);
             Assert.IsNotNull(reader);
         }
