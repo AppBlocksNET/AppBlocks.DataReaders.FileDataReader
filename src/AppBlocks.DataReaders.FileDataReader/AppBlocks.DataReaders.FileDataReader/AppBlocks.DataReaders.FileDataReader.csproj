@@ -10,7 +10,6 @@
     <RepositoryUrl>https://github.com/AppBlocksNET/AppBlocks.DataReaders.FileDataReader</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes>init</PackageReleaseNotes>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
