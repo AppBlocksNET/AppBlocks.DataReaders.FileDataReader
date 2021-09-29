@@ -1,4 +1,4 @@
-name: AppBlocks.Blocks
+name: AppBlocks.DataReaders.FileDataReader
 
 on:
   push:
