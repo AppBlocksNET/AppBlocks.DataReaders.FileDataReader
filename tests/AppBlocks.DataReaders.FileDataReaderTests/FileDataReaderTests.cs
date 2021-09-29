@@ -1,3 +1,4 @@
+using AppBlocks.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AppBlocks.DataReaders.FileDataReaderTests
@@ -10,6 +11,14 @@ namespace AppBlocks.DataReaders.FileDataReaderTests
         {
             var path = "..\\..\\..\\data\\ItemChildrenDeserializationTest.json";
             var reader = new FileDataReader(path);
+            Assert.IsNotNull(reader);
+        }
+
+        [TestMethod]
+        public void ItemFromReader()
+        {
+            var path = "..\\..\\..\\data\\ItemChildrenDeserializationTest.json";
+            var reader = Item.FromDataReader(new FileDataReader(path));
             Assert.IsNotNull(reader);
         }
     }
