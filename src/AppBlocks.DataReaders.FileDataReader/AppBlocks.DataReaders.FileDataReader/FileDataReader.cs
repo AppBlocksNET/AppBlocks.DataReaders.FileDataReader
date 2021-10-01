@@ -100,7 +100,11 @@ namespace AppBlocks.DataReaders
             get { return 3; }
         }
 
-        public object this[string name] => this[name];
+        //public object this[string name] => this[name];
+        public object this[string name]
+        {
+            get { return this[name]; }
+        }
 
         public IDataReader GetData(int i)
         {
@@ -191,7 +195,7 @@ namespace AppBlocks.DataReaders
             }
             catch (Exception exception)
             {
-                Console.WriteLine($"ERROR in FileDataReader.GetChars({name}):{exception}");
+                Console.WriteLine($"ERROR in FileDataReader.GetChars({i}):{exception}");
             }
             return long.MinValue;
         }
@@ -204,7 +208,7 @@ namespace AppBlocks.DataReaders
             }
             catch (Exception exception)
             {
-                Console.WriteLine($"ERROR in FileDataReader.GetDateTime({name}):{exception}");
+                Console.WriteLine($"ERROR in FileDataReader.GetDateTime({i}):{exception}");
             }
             return DateTime.MinValue;
         }
